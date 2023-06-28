@@ -1,0 +1,17 @@
+/* Write code for your CSS here */
+.hero p:first-child{
+    font-weight: bold;
+}
+.skill ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: -39px;
+}
+
+.skill ul li{
+    background-color: aqua;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 6px;
+}
