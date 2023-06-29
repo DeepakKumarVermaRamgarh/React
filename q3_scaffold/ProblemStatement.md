@@ -1,5 +1,4 @@
-### Debug the React app to fix the binding issues
+### Debug the React app to correctly render the Card component with props.
 
-Objectives -
-
-Clicking on the button should show the mood prediction.
+Output:
+<img src="https://res.cloudinary.com/dl26pbek4/image/upload/v1672730644/cn-questions/Capture_vccm5v.png">
