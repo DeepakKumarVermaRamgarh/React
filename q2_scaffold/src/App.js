@@ -1,15 +1,14 @@
-import About from "./About";
-import Hero from "./Hero";
-import Skills from "./Skills";
+import List from "./components/List";
 import "./styles.css";
+import React from "react";
 
-export default function App() {
-  // Code here
-  return(
-    <>
-      <Hero />
-      <Skills />
-      <About />
-    </>
-  )
+function App() {
+  return (
+    <div className="App">
+      <h1>Reach me</h1>
+      <List />
+    </div>
+  );
 }
+
+export default App;
