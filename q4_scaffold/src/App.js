@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Animepedia</h1>
-        <AnimeList state={this.state} />
+        <AnimeList anime={this.state.anime} />
       </div>
     );
   }

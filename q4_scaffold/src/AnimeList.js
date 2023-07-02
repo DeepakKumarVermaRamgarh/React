@@ -4,10 +4,10 @@ import AnimeCard from './AnimeCard'
 // Complete the AnimeList Component
 class AnimeList extends Component {
   render() {
-    const {state} = this.props;
+    const {anime} = this.props;
     return <div className="anime-list">
       {
-        state.anime.map((a,i) => <AnimeCard key={i} anime = {a} />)
+        anime.map((a,i) => <AnimeCard key={i} anime = {a} />)
       }
     </div>;
   }
