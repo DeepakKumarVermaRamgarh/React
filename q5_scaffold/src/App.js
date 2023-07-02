@@ -16,19 +16,19 @@ export default function App() {
       }}>
         <h1>Register Form</h1>
         <input type="text" placeholder="Name" style={{
-          width: "100 %",
+          width: "100%",
           paddingBlock: '0.5rem',
           border: '1px solid black',
           borderRadius: '5px'
         }} />
         <input type="email" placeholder="Email" style={{
-          width: "100 %",
+          width: "100%",
           paddingBlock: '0.5rem',
           border: '1px solid black',
           borderRadius: '5px'
         }} />
         <input type="password" placeholder="Password" style={{
-          width: "100 %",
+          width: "100%",
           paddingBlock: '0.5rem',
           border: '1px solid black',
           borderRadius: '5px'
