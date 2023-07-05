@@ -31,23 +31,26 @@ export default class App extends React.Component {
 
   onAddImage = (e) => {
     e.preventDefault();
+    this.setState((prevState) => ({
+      images: [...prevState.images, this.state.imageUrl],
+      imageUrl: ""
+    }))
+    this.addImageToLS();
   };
 
   // Create function to set image url
-  setUrl = () => {
-    this.setState({
-      imageUrl: this.state.imageUrl
-    });
+  setUrl = (e) => {
+    this.setState({ imageUrl: e.target.value })
   }
 
   // Use appropriate lifecycle method to get images
-  componentDidUpdate(){
-    this.addImageToLS();
+
+  componentDidMount(){
     this.setState({
       images: this.getImagesFromLS()
     });
-  
   }
+
 
   render() {
     return (
@@ -57,8 +60,9 @@ export default class App extends React.Component {
             type="text"
             placeholder="Image URL"
             value={this.state.imageUrl}
+            onChange={(e) => this.setUrl(e)}
           />
-          <button onClick={this.setUrl} >Add Image</button>
+          <button type="submit" >Add Image</button>
         </form>
         <ImageList images={this.state.images} />
       </>
